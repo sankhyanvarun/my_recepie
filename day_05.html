@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>DOCUMENT</title>
+    <link rel="stylesheet" href="day_05.css"> 
+    <script src="day_05.js"></script>
+    <script src="day_06.js"></script>
+
+</head>
+<body style="background-color:powderblue;">
+    Let's guess the password :
+    <input type="text" id="userInput" onkeypress="playSound()" placeholder="Enter your password here">
+    <button onclick="printInput()">Print Input</button>
+    <script>
+        function printInput() {
+            checkInput();
+        }
+    </script>
+    <p id="s"></p>
+</body>
+</html>
