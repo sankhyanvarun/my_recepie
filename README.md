@@ -1,10 +1,9 @@
 # my_recepie
-
-##Project Title: Interactive Recipe Web Page with Falling Food Animation
-##Project Description:
+## Project Title: Interactive Recipe Web Page with Falling Food Animation
+## Project Description:
 This project is a simple, visually appealing recipe webpage where users can explore different food items. When users interact with the page by clicking on the heading, delightful food images fall from the top of the screen, enhancing the user experience with a fun and interactive animation. The webpage is designed using HTML, CSS, and JavaScript, with a responsive layout to ensure that it looks good on devices of all screen sizes.
 
-#Key Features:
+# Key Features:
 Responsive Layout:
 
 The page is designed to be fully responsive, ensuring a great experience across various screen sizes, from mobile devices to large desktop screens. It uses percentage-based widths and flexible font sizes to achieve this.
@@ -24,10 +23,10 @@ Sticky Header:
 
 The header remains visible at the top of the page as the user scrolls down, making the main action point (triggering the falling food animation) always accessible.
 Technologies Used:
-HTML:
+# HTML:
 
 Structured the layout of the webpage, including headers, images, and buttons for different food items.
-CSS:
+# CSS:
 
 Styled the webpage with a focus on responsive design, creating hover effects, and implementing animations for the falling food items.
 JavaScript:
