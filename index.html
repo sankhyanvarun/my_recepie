@@ -1,144 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDEX</title>
-    <style>
-        body {
-            background-image: url("food01.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INDEX</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('food01.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-        .header {
-            background-color: #ffae6d;
-            background-repeat: no-repeat;
-            background-size:cover;           
-            color: rgb(165, 42, 42);
-            font-size: 50px;
-            text-align: center;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 4px #000000;
-            position: sticky;
-            top: 0;
-        }
+.header {
+    background-color: #ffae6d;
+    color: rgb(165, 42, 42);
+    font-size: 4vw; /* Responsive font size */
+    text-align: center;
+    padding: 1.5vw; /* Responsive padding */
+    margin-bottom: 1.5vw; /* Responsive margin */
+    box-shadow: 0 0 0.4vw #000000; /* Responsive box shadow */
+    position: sticky;
+    top: 0;
+    cursor: pointer; /* Add cursor pointer for interaction */
+}
 
-        .mybar {
-            background-color: #56bee0;
-            color: #DFE0E2;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 4px #000000;
-            text-align: center;
-        }
+.mybar {
+    background-color: #56bee0;
+    color: #DFE0E2;
+    padding: 1.5vw; /* Responsive padding */
+    margin-bottom: 1.5vw; /* Responsive margin */
+    box-shadow: 0 0 0.4vw #000000; /* Responsive box shadow */
+    text-align: center;
+}
 
-        .content {
-            width: 30%;
-            float: left;
-            padding-left: 10px;
-            margin-right: 15px;
-            margin-left: 15px;
-            margin-bottom: 28px;
-        }
+.content {
+    width: 30%; /* Adjust width percentage for responsiveness */
+    float: left;
+    padding: 1vw; /* Responsive padding */
+    margin-right: 1vw; /* Responsive margin */
+    margin-left: 1vw; /* Responsive margin */
+    margin-bottom: 1.5vw; /* Responsive margin */
+}
 
-        .footer {
-            background-color: #f2f2f2;
-            color: #333;
-            padding: 10px;
-            text-align: center;
-            clear: both;
-        }
+.footer {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 1vw; /* Responsive padding */
+    text-align: center;
+    clear: both;
+}
 
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
+img {
+    width: 80%; /* Reduce image width */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s; /* Add transition for transform effect */
+}
 
-        .button {
-            background-color: rgb(217, 166, 118);
-            color: rgb(16, 4, 4);
-            border: none;
-            border-radius: 20px;
-            box-shadow: 0 0 4px #000000;
-            font-size: 24px;
-            padding: 15px;
-            margin: 10px auto;
-            display: block;
-            width: 80%;
-            text-align: center;
-            cursor: pointer;
-        }
-        .small_button {
-            background-color: rgb(21, 20, 19);
-            color: #00ff00;
-            border: none;
-            border-radius: 20px;
-            box-shadow: 0 0 4px #000000;
-            font-size: 16px; /* Reduced font size for a smaller appearance */
-            padding: 10px; /* Reduced padding to make the button smaller */
-            margin: 10px;
-            display: inline-block; /* Changed from block to inline-block */
-            width: auto; /* Changed from 80% to auto for natural width */
-            text-align: center;
-            cursor: pointer;
-            position: sticky; /* Positioning the button */
-            right: 0; /* Align to the right */
-            top: 10px; /* Adjust this value as needed to position vertically */
-        }
-        
-        .small_button:hover {
-            background-color: #131313; /* Slightly lighter background on hover */
-        }
+img:hover {
+    transform: rotate(10deg); /* Apply rotation on hover */
+}
 
-        .button:hover {
-            background-color: #ffae6d;
-        }
+.button, .small_button {
+    background-color: rgb(217, 166, 118);
+    color: rgb(16, 4, 4);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 4px #000000;
+    font-size: 1.8vw; /* Responsive font size */
+    padding: 1.5vw; /* Responsive padding */
+    margin: 1vw auto; /* Responsive margin */
+    display: block;
+    width: 80%; /* Adjust button width for responsiveness */
+    text-align: center;
+    cursor: pointer;
+}
 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-        
-    </style>
+.small_button {
+    background-color: rgb(21, 20, 19);
+    color: #00ff00;
+    font-size: 1.2vw; /* Reduced font size for a smaller appearance */
+    padding: 1vw; /* Reduced padding to make the button smaller */
+    margin: 1vw; /* Responsive margin */
+    display: inline-block; /* Changed from block to inline-block */
+    width: auto; /* Changed from 80% to auto for natural width */
+    text-align: center;
+    cursor: pointer;
+    position: sticky; /* Positioning the button */
+    right: 0; /* Align to the right */
+    top: 1vw; /* Adjust this value as needed to position vertically */
+}
+
+.small_button:hover {
+    background-color: #131313; /* Slightly lighter background on hover */
+}
+
+.button:hover {
+    background-color: #ffae6d;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Falling food item CSS */
+.food-item {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+    animation: fall 2s linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+</style>
 </head>
-
 <body>
-
-    <link rel="stylesheet" href="day_05.css"> 
-    <script src="day_05.js"></script>
-<h1 class="header">😋(:RECIPES:)😋</h1>
-<h2 class="small_button"><a href="day_05.html">--TRY YOUR LUCK--</a></h2>
-
-
+<h1 class="header" onclick="createFoodItems()">😋(:RECIPES:)😋</h1>
 <h2 class="mybar">😁😋Recipes are the steps required for making a dish or any food item. A dish can be made by using different recipes which result in different tastes. These recipes provide us with detailed procedures to make any dish.😁😋</h2>
 
 <div class="content">
-    <img src="Best-Chicken-Tikka-Masala.jpg" alt="Chicken Tikka Masala" style="width:450px;height:350px;margin-left:50px;margin-top:40px">
+    <img src="Best-Chicken-Tikka-Masala.jpg" alt="Chicken Tikka Masala">
     <h2 class="button"><a href="CHICKEN.html">Chicken Tikka Masala</a></h2>
 </div>
 
 <div class="content">
-    <img src="palak_paneer.jpg" alt="Palak paneer" style="width:450px;height:350px;margin-left:50px;margin-top:40px">
+    <img src="palak_paneer.jpg" alt="Palak paneer">
     <h2 class="button"><a href="palak.html">Palak Paneer</a></h2>
 </div>
 
 <div class="content">
-    <img src="gulab-jamun.jpg" alt="Gulab Jamun" style="width:450px;height:350px;margin-left:50px;margin-top:40px">
+    <img src="gulab-jamun.jpg" alt="Gulab Jamun">
     <h2 class="button"><a href="gulab_jamun.html">Gulab Jamun</a></h2>
 </div>
 
 <div class="footer">Copyright --- This webpage has been created by Varun Sankhyan and he has the total authority to change it, publish it, and share it with other users.</div>
 
+<script>
+function createFoodItems() {
+    const foodImages = [
+        'Best-Chicken-Tikka-Masala.jpg',
+        'palak_paneer.jpg',
+        'gulab-jamun.jpg'
+    ];
+
+    for (let i = 0; i < 15; i++) {
+        const foodItem = document.createElement('img');
+        foodItem.src = foodImages[Math.floor(Math.random() * foodImages.length)];
+        foodItem.classList.add('food-item');
+        foodItem.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+        foodItem.style.animationDuration = Math.random() * 2 + 1 + 's'; // Random animation duration
+        document.body.appendChild(foodItem);
+
+        setTimeout(() => {
+            foodItem.remove();
+        }, 2000);
+    }
+}
+</script>
 </body>
 </html>
-
-
-
